@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin&family=Hubballi&family=Josefin+Sans&family=Kirang+Haerang&family=Nunito+Sans:wght@700&family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: all 0.2s;
+    /* background-image: url("imggif/bg.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-color: #ccc;
+}
+
+nav {
+
+    font-family: Josefin Sans;
+    position: fixed;
+    width: 100%;
+    background-color: #fbfbfbba;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 12px;
+    font-family: Cabin;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: #222222
+}
+
+/* Dropdown */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dd-button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 30px 10px 20px;
+    background-color: #ffffffd6;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+}
+
+.dd-button:hover {
+    background-color: #ffffff;
+}
+
+
+.dd-input {
+    display: none;
+}
+
+.dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffffd6;
+    list-style-type: none;
+}
+
+.dd-input+.dd-menu {
+    display: none;
+}
+
+.dd-input:checked+.dd-menu {
+    display: block;
+}
+
+.dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dd-menu li:hover {
+    background-color: #ffffff;
+}
+
+.dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+}
+
+.dd-menu li.divider {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+
+nav ul .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* nav ul .brand img {
+    width: 45px;
+    padding: 0 8px;
+} */
+
+.container {
+    color: white;
+    font-family: Varela Round;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 40rem;
+}
+
+/* Bottom */
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom input {
+    margin-top: 10px;
+}
+
+#myProgressbar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin: 0.2rem 0.5rem;
+    transition: all 0.4s;
+    border-radius: 50%;
+}
+
+/* #masterplay:hover{
+    color:rgb(110, 171, 190);
+} */
+.hoverd {
+    background-color: aliceblue;
+    transform: scale(0.001, 0.001);
+    opacity: 0.4;
+}
+
+.clm-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.songItemContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.songItemContainer .songItem .songlistplay {
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.songItem {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+    margin: 10rem;
+    padding: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.466);
+    color: rgb(0, 0, 0);
+    margin: 2rem;
+    border-radius: 7px;
+}
+
+.songItem img {
+    width: 6rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 9px black;
+    margin-bottom: 10px;
+}
+
+.SongName {
+    color: rgb(5, 4, 19);
+    font-family: revert;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+.timestamp {
+    margin: 0 8px;
+}
+
+.timestamp i {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.songInfo {
+    height: 5vh;
+    position: absolute;
+    left: 9.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.songInfo img {
+    height: 37px;
+    position: relative;
+    top: 0.6rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+
+input[type="range"]{
+    margin-top:12px;
+    height:3px;
+}
+input[type="range"]:range-thumb{
+    height: 5px;;
+}
+
+
+@media screen and (max-width: 670px) {
+
+    /* body{
+        display:none;
+    } */
+    #masterSong {
+        display: none;
+    }
+}

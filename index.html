@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music - App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed4592fe09.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed4592fe09.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><a href=#>Music-App</a></li>
+            <label class="dropdown">
+
+                <div class="dd-button">
+                    Genres
+                </div>
+
+                <input type="checkbox" class="dd-input" id="test">
+
+                <ul class="dd-menu">
+                    <li onclick="religous_song()" style="cursor: pointer;" id="religous" class="d_r_list">Religous</li>
+                    <li onclick="rap_song()" style="cursor: pointer;" id="rap" class="d_r_list">Rap</li>
+                    <li onclick="simple_song()" style="cursor: pointer;" id="simple" class="d_r_list">Simple</li>
+
+                    <li class="divider"></li>
+                    <li onclick="all_song()" style="cursor: pointer;" id="allsongs" class="d_r_list">All Songs</li>
+
+                </ul>
+
+            </label>
+        </ul>
+    </nav>
+    <br><br>
+    <div class="eve">
+        <div class="container">
+            <div class="songList">
+                <div class="clm-container">
+                    <div class="songItemContainer"></div>
+                    
+                </div>
+
+            </div>
+            <div class="songBanner"></div>
+        </div>
+        <div class="bottom">
+            <input type="range" name="" id="myProgressbar" value="0" min="0" max="100">
+            <div class="icons">
+                <!-- Font-awesome icons -->
+                <i class="icons fas fa-2x fa-backward " id="previous"></i>
+                <i class="icons far fa-2x fa-play-circle" id="masterplay"></i>
+                <i class="icons fas fa-2x fa-forward " id="next"></i>
+            </div>
+            <div class="songInfo">
+                <img src="imggif/playing.gif" id="gifimgplay" alt="">
+                <span id="masterSong" class="SongNameCurrent">Sukhkarta Dukhkarta
+                </span>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
