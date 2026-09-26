@@ -7,9 +7,9 @@
 
 body {
     transition: all 0.2s;
-    /* background-image: url("imggif/bg.jpg"); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
+    background-image: url("imggif/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #ccc;
 }
 
